@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <title>Does Jackie hate Fred today?</title>
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <script src="bower_components/chance/chance.js"></script>
+    <script type="text/javascript">
+window.onload = function() {
+  var div = document.createElement('div');
+  div.style = 'text-align: center; margin-top: 2em;'
+
+  if (chance.bool()) {
+    div.innerHTML = '<h1>yes!</h1>';
+  } else {
+    div.innerHTML = '<h1>no.</h1>';
+  }
+
+  document.body.appendChild(div);
+}
+    </script>
+  </head>
+
+  <body>
+    <div style="text-align: center;">
+      <h2>Does Jackie hate Fred today?</h2>
+    </div>
+  </body>
+</html>
